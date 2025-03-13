@@ -7,7 +7,7 @@ width:auto}
            margin:0 15px;
            text-decoration: none; 
           }
-  .container { width: 1000px; 
+  .container {width:; 
       margin-bottom: 20px; 
       padding: 0px;
    }
@@ -76,7 +76,7 @@ font: bold;
 }
 @keyframes slide{
   from{transform: translate(0px);}
-  to{transform: translate(300px);}
+  to{transform: translate(200px);}
 }
 .container {
   height: 80vh;
