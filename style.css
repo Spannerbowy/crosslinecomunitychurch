@@ -1,248 +1,147 @@
-body { 
-  font-family: 'Times New Roman', Times, serif;
-  text-align: start;
+/* General Reset */
+* {
   margin: 0;
   padding: 0;
-  width: 100%;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-header { 
-  background-image: linear-gradient(red, rgb(12, 8, 109)); 
-  color: white; 
-  padding: 10px;
-  width: 100%; 
+/* Body Styling */
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
 }
 
-nav a { 
-  color: rgb(75, 227, 15); 
-  margin: 0 15px;
-  text-decoration: none; 
-}
-
-.container {     
-  width: 90%;
-  margin: auto;
+/* Header Styling */
+header {
+  background-image: linear-gradient(red, rgb(12, 8, 109));
+  color: white;
   text-align: center;
   padding: 20px;
 }
 
-footer { 
-  background-color: orangered;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-
-.imagelinks img { 
-  width: 35%;
-  margin: 5px;
-  height: auto; 
-}
-
-header p {
-  color: white;
-  margin-right: 0px;
-  text-align: right;
+header .crosslinelogo {
+  max-width: 150px;
+  display: block;
+  margin: 0 auto;
 }
 
 header h1 {
-  text-align: center;
+  font-size: 28px;
+  margin-top: 10px;
 }
 
-header .crosslinelogo {
-  width: 10%;
-  height: auto;
-  position: absolute;
-  margin-left: 0%;
-}
-
+/* Navigation Styling */
 nav {
-  margin-left: 40%;
+  margin-top: 10px;
 }
 
-.container .mainimage {
-  width: 100%;
-  height: auto;
-}       
-
-
-.imagelinks .images {
-  width: 30%;
-  height: 200px;
-  margin: 5px;
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 15px;
+  padding: 8px 12px;
+  display: inline-block;
+  transition: 0.3s;
 }
 
-.containa .box {
-  width: 80%;
-  margin: auto;
-  padding: 15px;
-  background: #f4f4f4;
+nav a:hover {
+  background: #00509E;
+  border-radius: 5px;
+}
+
+/* Container Styling */
+.containa {
+  max-width: 80%;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.topic {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: xx-large;
-  font-weight: bold;
+/* Section Headings */
+h2, h3, h4 {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+/* Paragraph Styling */
+p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #00509E;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+a.button:hover {
+  background: #003366;
+}
+
+/* Forms */
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: #00509E;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #003366;
+}
+
+/* Footer Styling */
+footer {
+  background: orangered;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 14px;
 }
 
 /* Responsive Design */
-@media screen and (max-width: 1024px) {
-  .container {
-    width: 95%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .crosslinelogo {
-    position: static;
-    display: block;
-    margin: auto;
+@media (max-width: 768px) {
+  .containa {
+      max-width: 95%;
+      padding: 15px;
   }
 
   header h1 {
-    font-size: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .hea {
-    font-size: 1.5rem;
+      font-size: 24px;
   }
 
   nav a {
-    font-size: 0.9rem;
-  }
-}
-
-@keyframes slide {
-  from { transform: translate(0px); }
-  to { transform: translate(300px); }
-}
-.hea {
-  color: orange;
-  text-align: center;
-  font-size: 4vw; /* Responsive font size */
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  animation-name: slide;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-delay: 1s;
-}
-
-@media screen and (max-width: 1024px) {
-  .hea {
-      font-size: 3vw;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .hea {
-      font-size: 5vw;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .hea {
-      font-size: 6vw;
-  }
-}
-.container {
-  height: 100vh;
-  width: 100vw;
-  align-items: center;
-  justify-content: center;
-  background: rgb(26, 25, 25);
-  animation: change-background 3s infinite linear;
-}
-
-/* Updated Candle Design */
-.candle-body {
-  position: absolute;
-  width: 50px;
-  height: 50px; /* Reduced height */
-  background: linear-gradient(
-    rgb(209, 158, 64),
-    rgb(165, 96, 11),
-    rgb(241, 85, 12),
-    rgb(109, 47, 3) 50%,
-    rgba(0, 0, 0, 0.6)
-  );
-  bottom: 1%;
-  left: 50%;
-}
-
-/* Removed .candle-stick */
-
-.candle-body:after {
-  content: "";
-  position: absolute;
-  top: -15px;
-  height: 30px;
-  width: 50px;
-  border-radius: 50px;
-  background: radial-gradient(
-    rgb(226, 95, 34),
-    rgb(168, 117, 23),
-    rgb(255, 149, 18),
-    rgb(112, 49, 3)
-  );
-  transform: rotateX(55deg);
-  box-shadow: inset 2px 3px 4px rgba(0, 0, 0, 0.2),
-              inset -2px -3px 4px rgba(0, 0, 0, 0.2);
-}
-
-.candle-flames {
-  position: absolute;
-  background: linear-gradient(
-    rgb(224, 216, 216) 50%,
-    rgb(233, 157, 17),
-    rgb(12, 12, 226)
-  );
-  border-radius: 50% 50% 30% 30%;
-  width: 15px;
-  height: 50px;
-  top: -50px; /* Adjusted positioning */
-  left: 20px;
-  animation: move 1s linear infinite, rotate 2s linear infinite;
-  box-shadow: 35px -25px 50px rgb(228, 70, 13), -35px -25px 50px rgb(180, 52, 6);
-}
-
-@keyframes move {
-  0% {
-    transform: rotateZ(1deg);
-  }
-  100% {
-    transform: rotateZ(-1deg);
-  }
-}
-
-@keyframes rotate {
-  0% {
-    top: -50px;
-    left: 20px;
-  }
-  100% {
-    top: -50px;
-    left: 20px;
-  }
-}
-
-@keyframes change-background {
-  0%, 60%, 98%, 100% {
-    background: rgb(3, 52, 65);
-  }
-  61%, 97% {
-    background: #000;
+      font-size: 16px;
+      margin: 0 8px;
   }
 }
