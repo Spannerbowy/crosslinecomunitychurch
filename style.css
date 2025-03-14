@@ -84,12 +84,14 @@ nav a:hover {
 .containa {
   max-width: 80%;
   margin: 20px auto;
-  background:gray;
+  background:rgb(177, 218, 14);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-
+.containa .topic{
+  align-self: center;
+}
 /* Section Headings */
 h2, h3, h4 {
   color: #003366;
@@ -165,11 +167,11 @@ footer {
   }
 
   header h1 {
-      font-size: ;
+      font-size:small ;
   }
 
  header nav a {
-      font-size: 10px;
+      font-size: 15px;
       margin: 0 2%;
       width: 15%;
   }
