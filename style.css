@@ -50,6 +50,7 @@ nav {
 header .tabs{
   width:15%;
   margin:0.1%;
+  paddiing:10px;
 }
 .container .imagelinks{
   width: 100%;
