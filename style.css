@@ -58,6 +58,7 @@ header .tabs{
 }
 .container .imagelinks .images{
   width:30%;
+  height:200px;
 }
 .container .mainimage{
   width: 100%;
