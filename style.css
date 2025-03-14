@@ -48,7 +48,7 @@ nav {
   background-color: rgb(197, 106, 22);
 }
 header .tabs{
-  width:15%;
+  width:20%;
   margin:0.1%;
   margin: 0 15px;
 }
@@ -63,7 +63,7 @@ header .tabs{
   height: 200px;
 }
 .images{
-  padding: -70%;
+  padding: 30%;
 }
 nav a {
   color: white;
@@ -165,7 +165,7 @@ footer {
   }
 
   header h1 {
-      font-size: 24px;
+      font-size: ;
   }
 
  header nav a {
