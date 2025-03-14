@@ -47,6 +47,10 @@ nav {
   text-align: center;
   background-color: rgb(16, 175, 228);
 }
+header .tabs{
+  width:10%;
+  margin:0.1%;
+}
 .container .imagelinks{
   width: 100%;
 }
