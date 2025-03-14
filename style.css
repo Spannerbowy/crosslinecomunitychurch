@@ -36,7 +36,25 @@ header h1 {
 nav {
   margin-top: 10px;
 }
-
+.container{
+  width: 100%;
+  align-content: center;
+  align-content: center;
+  text-align: center;
+}
+.container .imagelinks{
+  width: 100%;
+}
+.container .imagelinks .images{
+  width:30%;
+}
+.container .mainimage{
+  width: 100%;
+  height: 400px;
+}
+.images{
+  padding: -70%;
+}
 nav a {
   color: white;
   text-decoration: none;
